@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_baseline_arrow_back_24"
+        android:text="        Login"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="@color/white"
+        android:background="#0583EA"
+        android:paddingLeft="15dp"
+        android:paddingVertical="15dp"
+
+        />
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv1"
+        android:layout_marginVertical="25dp"
+        android:hint="Email"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="20sp"
+        android:paddingLeft="20sp"
+        />
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et1"
+        android:layout_marginVertical="25dp"
+        android:hint="Password"
+        android:layout_marginHorizontal="20dp"
+        android:textSize="20sp"
+        android:paddingLeft="20sp"
+        android:paddingHorizontal="20sp"
+        />
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="Use Phone Number"
+        android:textSize="20dp"
+        android:paddingVertical="5dp"
+        android:textColor="#0583EA"
+        app:layout_constraintTop_toBottomOf="@id/et2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <Button
+        android:id="@+id/btn1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv2"
+        android:text="Login"
+        android:textSize="20sp"
+        android:background="#858992"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:paddingVertical="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginVertical="20dp"
+
+        />
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forget Password ?"
+        android:textSize="15dp"
+        android:paddingTop="10dp"
+        app:layout_constraintTop_toBottomOf="@id/btn1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OR"
+        android:layout_marginTop="20sp"
+        android:textStyle="bold"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/tv3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:layout_constraintTop_toBottomOf="@id/tv4"
+        android:background="#3B5998"
+        />
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/facebookicon"
+        app:layout_constraintTop_toTopOf="@id/tv5"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/tv5"
+        android:paddingLeft="20dp"
+        />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    app:layout_constraintTop_toTopOf="@id/tv5"
+    app:layout_constraintBottom_toBottomOf="@id/tv5"
+    android:text="Continue with facebook"
+    android:textStyle="bold"
+    android:textColor="@color/white"
+    android:textSize="25dp"
+    android:layout_marginLeft="30dp"
+    app:layout_constraintLeft_toLeftOf="@id/tv5"
+    app:layout_constraintRight_toRightOf="parent"
+    />
+    <TextView
+
+        android:id="@+id/tv7"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:paddingHorizontal="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:background="@drawable/rectangle"
+        app:layout_constraintTop_toBottomOf="@id/tv5"
+        android:layout_marginTop="10dp"
+
+        />
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="@id/tv7"
+        android:src="@drawable/ic_flat_color_icons_google"
+        app:layout_constraintBottom_toBottomOf="@id/tv7"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:paddingLeft="20dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toRightOf="@id/iv1"
+        app:layout_constraintTop_toTopOf="@id/tv7"
+        app:layout_constraintBottom_toBottomOf="@id/tv7"
+        android:text="Continue with google"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
